@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  robot-control-postgres:
+    image: 'postgres:15.1'
+    ports:
+      - 7654:5432
+    environment:
+      POSTGRES_USER: johndoe
+      POSTGRES_PASSWORD: randompassword
+      POSTGRES_DB: dbgenerated_bug
